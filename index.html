@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlexBuild PCs</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f2f5; }
-    header { background: #1a1a1a; color: white; padding: 1rem; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 1rem; background: #333; padding: 0.5rem; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    main { padding: 2rem; text-align: center; }
-    button { padding: 1rem 2rem; margin: 1rem; font-size: 1.2rem; border: none; background: #4CAF50; color: white; cursor: pointer; border-radius: 5px; }
-    button:hover { background: #45a049; }
-    footer { background: #1a1a1a; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlexBuilds - Custom PC Building and Rent-to-Own">
+    <title>FlexBuilds - Custom PCs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>FlexBuilds</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parts.html">PC Parts</a></li>
+                <li><a href="builds.html">Custom Builds</a></li>
+                <li><a href="rent.html">Rent to Own</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>FlexBuild PCs</h1>
-  <p>Build, Buy, or Rent Your Dream PC</p>
-</header>
+    <section class="hero">
+        <h2>Build Your Dream PC</h2>
+        <p>Custom-built PCs tailored for gaming, work, or anything in between. Rent-to-own or buy outright!</p>
+    </section>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#custom">Custom PCs</a>
-  <a href="#kits">Pre-Chosen Kits</a>
-  <a href="#rent">Rent-to-Own</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section class="features">
+        <div class="feature">
+            <h3>Custom Builds</h3>
+            <p>Choose from a variety of high-performance parts to build your perfect PC.</p>
+        </div>
+        <div class="feature">
+            <h3>Rent to Own</h3>
+            <p>Flexible rent-to-own options for those who want to pay over time.</p>
+        </div>
+        <div class="feature">
+            <h3>Support</h3>
+            <p>Get expert help with PC setup, upgrades, and maintenance.</p>
+        </div>
+    </section>
 
-<main id="home">
-  <h2>Start Your Build!</h2>
-  <button onclick="location.href='#custom'">Custom PC</button>
-  <button onclick="location.href='#kits'">Pre-Chosen Kit</button>
-</main>
-
-<main id="custom">
-  <h2>Customize Your PC</h2>
-  <p>Choose each part individually to match your needs and budget.</p>
-  <button onclick="location.href='#rent'">Continue</button>
-</main>
-
-<main id="kits">
-  <h2>Pre-Chosen Part Kits</h2>
-  <p>Select from our hand-picked, compatible kits.</p>
-  <button onclick="location.href='#rent'">Continue</button>
-</main>
-
-<main id="rent">
-  <h2>Buy or Rent-to-Own</h2>
-  <p>Own your PC today or make monthly payments with FlexRent.</p>
-  <button onclick="location.href='#contact'">Checkout</button>
-</main>
-
-<main id="contact">
-  <h2>Need Help?</h2>
-  <p>Email us at support@flexbuildpcs.com or call 1-800-FLEXPC.</p>
-</main>
-
-<footer>
-  &copy; 2025 FlexBuild PCs. All rights reserved.
-</footer>
-
+    <footer>
+        <p>&copy; 2025 FlexBuilds. All rights reserved.</p>
+    </footer>
 </body>
 </html>
