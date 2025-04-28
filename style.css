@@ -1,31 +1,28 @@
-/* Reset default styles for all elements */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Body Styles */
+/* Body and Typography */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    background-color: #1a1a1a;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo h1 {
-    font-size: 1.8rem;
-    margin-left: 20px;
+header .logo img {
+    height: 50px;
 }
 
 nav ul {
@@ -38,176 +35,108 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #f1f1f1;
+    color: #f4b400;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    background-color: #f1f1f1;
-    padding: 2rem;
+    position: relative;
     text-align: center;
+    color: white;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Features Section Styles */
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: #fff;
-}
-
-.feature {
-    width: 30%;
-    text-align: center;
-}
-
-.feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #777;
-}
-
-/* Product Listing Styles (Parts and Builds) */
-.part-item, .build-item {
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.part-item img, .build-item img {
+.hero img {
     width: 100%;
-    max-width: 300px;
-    margin: 1rem 0;
+    height: auto;
+    opacity: 0.8;
 }
 
-.part-item h3, .build-item h3 {
+.hero .cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .cta h1 {
+    font-size: 3rem;
+}
+
+.hero .cta p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
 }
 
-.part-item p, .build-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Call to Action Section Styles */
-.cta {
-    background-color: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-.cta h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.cta p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.cta button {
+.hero .cta .btn {
     background-color: #f4b400;
-    color: white;
     padding: 10px 20px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.cta button:hover {
+.hero .cta .btn:hover {
     background-color: #ff9800;
 }
 
-/* Footer Styles */
-footer {
+/* Product Section */
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    color: #f4b400;
+    font-weight: bold;
+}
+
+.product-card .btn {
     background-color: #333;
     color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-card .btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
     position: fixed;
-    bottom: 0;
     width: 100%;
-}
-
-footer p {
-    font-size: 0.8rem;
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-    /* Hero Section */
-    .hero {
-        padding: 1rem;
-    }
-
-    /* Features Section */
-    .features {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .feature {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    /* Parts and Builds Section */
-    .part-item, .build-item {
-        width: 100%;
-    }
-
-    /* Call to Action */
-    .cta h3 {
-        font-size: 1.5rem;
-    }
-
-    .cta p {
-        font-size: 1rem;
-    }
-
-    .cta button {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Header and Navigation */
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+    bottom: 0;
 }
